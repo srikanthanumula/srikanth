@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('shell_cmds') {
             steps {
-                sh 'date'
+                sh 'cd /home/ubuntu'
+                sh 'ls -lrt'
             }
         }
     }
